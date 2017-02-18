@@ -9,13 +9,13 @@
   margin-top: 4em; }
 
 header {
-  height: 24em; }
+  height: 25em; }
   header h1 {
-    margin: 0.67em 0;
-    position: relative;
-    top: 4em;
-    left: 2em;
-    font-size: 3em; }
+    font-size: 3em;
+      font-size-margin: 0.67em 0;
+      font-size-position: relative;
+      font-size-top: 4em;
+      font-size-left: 2em; }
 
 .nav-desktop {
   display: none; }
@@ -30,5 +30,3 @@ header {
       display: inline-block; }
     .nav-desktop ul li {
       list-style-type: none; } }
-
-/*# sourceMappingURL=styles.css.map */
