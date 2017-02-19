@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 *:before, *:after {
   box-sizing: inherit; }
@@ -11,6 +12,7 @@
 header {
   height: 24em; }
   header h1 {
+    display: inline-block;
     margin: 0.67em 0;
     position: relative;
     top: 4em;
@@ -30,5 +32,24 @@ header {
       display: inline-block; }
     .nav-desktop ul li {
       list-style-type: none; } }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em; }
+  .cards .card-container {
+    margin: 1em;
+    display: inline-block;
+    flex: 3; }
+    .cards .card-container .card-inner figure {
+      margin: 0 auto;
+      width: 20em;
+      height: 22em;
+      border: 1px solid grey; }
+    .cards .card-container .card-inner figcaption {
+      text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .cards .card-container {
+    flex: 1; } }
 
 /*# sourceMappingURL=styles.css.map */
