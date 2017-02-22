@@ -9,6 +9,12 @@
   margin: 2em;
   margin-top: 4em; }
 
+p {
+  margin: 0.5em; }
+
+h2 {
+  margin: 0 0.3em; }
+
 header {
   height: 24em;
   text-align: center; }
@@ -71,5 +77,23 @@ header {
   text-align: center; }
   #cta h2 {
     margin-bottom: 1em; }
+
+footer {
+  border-top: 1px solid grey;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1em; }
+  footer [class*='footer-section-'] {
+    padding: 1em; }
+  footer .footer-section-links {
+    flex: 1;
+    margin-left: 2em; }
+  footer .footer-section-main {
+    flex: 1 100%; }
+
+@media screen and (min-width: 768px) {
+  footer .footer-section-main {
+    flex: 1; } }
 
 /*# sourceMappingURL=styles.css.map */
