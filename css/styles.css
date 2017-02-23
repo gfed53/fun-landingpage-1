@@ -39,11 +39,28 @@ header {
     display: block;
     position: fixed;
     top: 0;
-    left: 1em; }
-    .nav-desktop ul, .nav-desktop li {
-      display: inline-block; }
-    .nav-desktop ul li {
-      list-style-type: none; } }
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+    z-index: 999; }
+    .nav-desktop .nav-inner {
+      position: relative;
+      left: 1em; }
+      .nav-desktop .nav-inner .nav-brand, .nav-desktop .nav-inner .nav-links {
+        padding: 1em; }
+      .nav-desktop .nav-inner .nav-brand {
+        font-size: 1.3em; }
+      .nav-desktop .nav-inner ul, .nav-desktop .nav-inner li {
+        display: inline-block; }
+      .nav-desktop .nav-inner ul li {
+        list-style-type: none;
+        padding: 0.5em 1em; }
+        .nav-desktop .nav-inner ul li a {
+          text-decoration: none;
+          color: white;
+          transition: 500ms linear all; }
+        .nav-desktop .nav-inner ul li a:hover {
+          color: #e8e8e8; } }
 #cards {
   display: flex;
   flex-wrap: wrap;

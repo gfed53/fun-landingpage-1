@@ -6,11 +6,27 @@
 		display: block
 		position: fixed
 		top: 0
-		left: 1em
-		.nav-brand
-		ul, li 
-			display: inline-block
-		ul
-			li
-				list-style-type: none
+		width: 100%
+		background-color: darkgrey
+		color: white
+		z-index: 999
+		.nav-inner
+			position: relative
+			left: 1em
+			.nav-brand, .nav-links
+				padding: 1em
+			.nav-brand
+				font-size: 1.3em
+			ul, li 
+				display: inline-block
+			ul
+				li
+					list-style-type: none
+					padding: 0.5em 1em
+					a
+						text-decoration: none
+						color: white
+						transition: 500ms linear all
+					a:hover
+						color: #e8e8e8
 
