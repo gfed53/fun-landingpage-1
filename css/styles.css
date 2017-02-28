@@ -76,8 +76,9 @@ header {
     #cards .card-container .card-inner figure {
       margin: 0 auto;
       width: 15em;
-      height: 18em;
-      border: 1px solid grey; }
+      height: 18em; }
+      #cards .card-container .card-inner figure img {
+        width: inherit; }
     #cards .card-container .card-inner figcaption {
       margin-top: 1em;
       text-align: center; }
