@@ -9,6 +9,15 @@
   margin: 2em;
   margin-top: 4em; }
 
+section {
+  font-family: 'Montserrat', sans-serif; }
+
+header h1 {
+  font-family: 'Raleway', sans-serif; }
+
+footer {
+  font-family: helvetica; }
+
 p {
   margin: 0.5em; }
 
@@ -25,7 +34,7 @@ header {
     position: relative;
     top: 4em;
     font-size: 2.5em;
-    color: white; }
+    color: #ECF0F1; }
 
 @media screen and (min-width: 768px) {
   header {
@@ -35,6 +44,7 @@ header {
     header h1 {
       left: 2em;
       font-size: 3em; } }
+
 .nav-desktop {
   display: none; }
 
@@ -44,8 +54,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: darkgrey;
-    color: white;
+    background-color: #2C3E50;
+    color: #ECF0F1;
     z-index: 999; }
     .nav-desktop .nav-inner {
       position: relative;
@@ -61,10 +71,11 @@ header {
         padding: 0.5em 1em; }
         .nav-desktop .nav-inner ul li a {
           text-decoration: none;
-          color: white;
+          color: #ECF0F1;
           transition: 500ms linear all; }
         .nav-desktop .nav-inner ul li a:hover {
-          color: #e8e8e8; } }
+          color: white; } }
+
 #cards {
   display: flex;
   flex-wrap: wrap;
@@ -87,9 +98,11 @@ header {
   #cards .card-container .card-inner figure {
     width: 20em;
     height: 22em; } }
+
 @media screen and (min-width: 768px) {
   #cards .card-container {
     flex: 1; } }
+
 #quote {
   margin: 15em 0;
   text-align: center; }
@@ -98,7 +111,10 @@ header {
   margin: 5em;
   text-align: center; }
   #cta h2 {
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
+  #cta #btn-cta {
+    padding: 1.3em 1.7em;
+    border: none; }
 
 footer {
   border-top: 1px solid grey;
@@ -117,5 +133,3 @@ footer {
 @media screen and (min-width: 768px) {
   footer .footer-section-main {
     flex: 1; } }
-
-/*# sourceMappingURL=styles.css.map */

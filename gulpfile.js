@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 
 var paths = {
 	sass: './sass/*.sass',
-	allSass: './sass/*/*.sass',
+	allSass: './sass/**/*.sass',
 	css: './css'
 };
 
@@ -14,7 +14,7 @@ var paths = {
 
 gulp.task('sass', function(){
 	return gulp.src(paths.sass)
-	.pipe(sass())
+	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest(paths.css));
 });
 

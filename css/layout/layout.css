@@ -1,9 +1,0 @@
-* {
-  box-sizing: border-box; }
-
-*:before, *:after {
-  box-sizing: inherit; }
-
-.grid {
-  margin: 2em;
-  margin-top: 4em; }
