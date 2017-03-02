@@ -8,8 +8,6 @@ var paths = {
 	css: './css'
 };
 
-//CURRENT BUILD ISSUE, DO NOT USE
-
 // Compile SASS
 
 gulp.task('sass', function(){
