@@ -6,16 +6,27 @@
 	#btn-cta
 		padding: 1.3em 1.5em
 		font-size: 1.2em
-		border: none
-		background-color: $green
-		color: white
+		border: 2px solid $dark-blue
+		background-color: white
+		color: #424141;
 
 @media screen and ($tablet)
 	#cta
 		margin: 5em
 		#btn-cta
-			transition: .2s linear all
+			// -webkit-animation: my-cta 1s
+			// webkit-animation-fill-mode: forwards
+			// -webkit-animation-direction: reverse
+			// animation: my-cta 1s
+			// animation-fill-mode: forwards
+			// animation-direction: reverse
+			
+			transition: 300ms linear all;
 		#btn-cta:hover
-			font-size: 1.4em
-			font-weight: bold
+			// -webkit-animation: my-cta 300ms
+			// -webkit-animation-fill-mode: forwards
+			// animation: my-cta 300ms
+			// animation-fill-mode: forwards
+			background-color: $dark-blue
+			color: white
 
