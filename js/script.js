@@ -13,6 +13,33 @@ $(function(){
 		offClass: "fallings-invisible"
 	});
 
+	//Header Load Animation
+	$('#bg-container h1 span:nth-child(1)').velocity({
+		opacity: 1
+	}, {
+		duration: 1000
+	});
+	$('#bg-container h1 span:nth-child(2)').velocity({
+		opacity: 1
+	}, {
+		duration: 1500
+	});
+	$('#bg-container h1 span:nth-child(3)').velocity({
+		opacity: 1
+	}, {
+		duration: 2000
+	});
+	$('#bg-container h1 span:nth-child(4)').velocity({
+		opacity: 1
+	}, {
+		duration: 2500
+	});
+	$('#bg-container h1 span:nth-child(5)').velocity({
+		opacity: 1
+	}, {
+		duration: 3000
+	});
+
 	//CTA Button Animation
 
 	// $('#btn-cta').on('mouseenter', ()=>{
