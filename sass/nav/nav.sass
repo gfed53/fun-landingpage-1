@@ -1,8 +1,8 @@
-.nav-desktop
+.nav-lg
 	display: none
 
 @media screen and ($tablet)
-	.nav-desktop
+	.nav-lg
 		display: block
 		position: fixed
 		top: 0
@@ -20,7 +20,7 @@
 			ul
 				li
 					list-style-type: none
-					padding: 1.2em
+					padding: 0.9em
 					a
 						text-decoration: none
 						color: $light-grey
@@ -42,4 +42,13 @@
 					a:hover:before
 						visibility: visible
 						transform: scaleX(1)
+
+@media screen and ($desktop)
+	.nav-lg
+		.nav-inner
+			ul
+				li
+					padding: 1.2em
+
+
 
