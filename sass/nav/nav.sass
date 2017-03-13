@@ -1,6 +1,34 @@
 .nav-lg
 	display: none
 
+.nav-dropdown
+	position: relative
+	text-align: right
+	right: 3.5em
+	#nav-toggle
+		z-index: 99
+		top: 2em
+	#nav-toggle span
+		position: absolute
+		left: 50%
+		right: 50%
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+		cursor: pointer
+		border-radius: 1px
+		height: 5px
+		width: 35px
+		background: white
+		position: absolute
+		display: block
+		content: ''
+
+	#nav-toggle span:before
+		top: -10px
+
+	#nav-toggle span:after
+		bottom: -10px 
+
+
 @media screen and ($tablet)
 	.nav-lg
 		display: block
@@ -42,6 +70,8 @@
 					a:hover:before
 						visibility: visible
 						transform: scaleX(1)
+	.nav-dropdown
+		display: none
 
 @media screen and ($desktop)
 	.nav-lg
