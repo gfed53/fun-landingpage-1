@@ -1,14 +1,35 @@
+.nav
+	position: fixed
+	top: 0
+	width: 100%
+	background-color: $dark-blue
+	color: $light-grey
+	.nav-inner
+		left: 1em
+		.nav-brand
+			font-size: 1.3em
+		ul
+			li
+				list-style-type: none
+				padding: 0.9em
+				a
+					// text-decoration: none
+					color: $light-grey
+					// transition: .25s linear all
 .nav-lg
 	display: none
 
 .nav-dropdown
-	position: relative
+	// position: relative
+	z-index: 99
 	.nav-toggle-container
+		top: 2em
+		z-index: 100
 		text-align: right
 		right: 3.5em
 		#nav-toggle
-			z-index: 99
-			top: 2em
+			// z-index: 99
+			// top: 2em
 		#nav-toggle span
 			position: absolute
 			left: 50%
@@ -44,11 +65,11 @@
 			transform: rotate(-45deg)
 
 
-	// .nav-links-mobile-container
-	// 	position: absolute
-	// 	width: 100%
-	// 	height: 100%
-	// 	z-index: 98
+	.nav-links-mobile-container
+		z-index: 98
+		background-color: $dark-blue
+		color: $light-grey
+
 
 
 @media screen and ($tablet)

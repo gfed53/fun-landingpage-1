@@ -43,6 +43,7 @@ $(function(){
 	//Hamburger Nav Icon Animation
 	$('#nav-toggle').on('click', ()=> {
 		$('#nav-toggle').toggleClass('active');
+		$('.nav-links-mobile-container').toggleClass('hidden');
 	});
 
 	//CTA Button Animation
