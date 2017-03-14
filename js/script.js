@@ -40,6 +40,11 @@ $(function(){
 		duration: 3000
 	});
 
+	//Hamburger Nav Icon Animation
+	$('#nav-toggle').on('click', ()=> {
+		$('#nav-toggle').toggleClass('active');
+	});
+
 	//CTA Button Animation
 
 	// $('#btn-cta').on('mouseenter', ()=>{
