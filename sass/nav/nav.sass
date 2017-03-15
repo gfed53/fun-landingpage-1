@@ -4,17 +4,17 @@
 	width: 100%
 	// background: $dark-blue
 	color: $light-grey
-	.nav-inner
-		.nav-brand
-			font-size: 1.3em
-		ul
-			li
-				list-style-type: none
-				padding: 0.9em
-				a
-					// text-decoration: none
-					color: $light-grey
-					// transition: .25s linear all
+.nav-inner
+	.nav-brand
+		font-size: 1.3em
+	ul
+		li
+			list-style-type: none
+			padding: 0.9em
+			a
+				// text-decoration: none
+				color: $light-grey
+				// transition: .25s linear all
 .nav-lg
 	display: none
 
@@ -68,27 +68,31 @@
 			transform: rotate(-45deg)
 
 
-	.nav-links-mobile-container
-		display: none
-		// z-index: -1
-		background: transparent
-		color: $light-grey
-		transition: 300ms ease-in-out all
-		ul li
-			opacity: 0
-			transition: 700ms ease-in-out all
-			transition-delay: 200ms
-	
-	.nav-links-mobile-container.active
-		// transition: 700ms ease-in-out all
-		display: block
-		background: $dark-blue
-		// z-index: 98
-	
+.nav-links-mobile-container
+	// display: none
+	z-index: -1
+	position: fixed
+	top: 3em
+	width: 100%
+	background: $dark-blue
+	// background: transparent
+	color: $light-grey
+	transition: 300ms ease-in-out all
+	ul li
+		opacity: 0
+		transition: 700ms ease-in-out all
+		transition-delay: 200ms
 
-	.nav-links-mobile-container.active ul li
-		// transition: 700ms ease-in-out all
-		opacity: 1
+.nav-links-mobile-container.active
+	// transition: 700ms ease-in-out all
+	// display: block
+	background: $dark-blue
+	z-index: 98
+
+
+.nav-links-mobile-container.active ul li
+	// transition: 700ms ease-in-out all
+	opacity: 1
 
 
 
