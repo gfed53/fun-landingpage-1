@@ -2,10 +2,9 @@
 	position: fixed
 	top: 0
 	width: 100%
-	background-color: $dark-blue
+	// background: $dark-blue
 	color: $light-grey
 	.nav-inner
-		left: 1em
 		.nav-brand
 			font-size: 1.3em
 		ul
@@ -23,11 +22,15 @@
 	// position: relative
 	z-index: 99
 	.nav-toggle-container
-		top: 2em
+		height: 3.5em
+		background: $dark-blue
 		z-index: 100
 		text-align: right
-		right: 3.5em
+		box-shadow: 1px 1px 2px #000
+		
 		#nav-toggle
+			top: 1.5em
+			right: 3.5em
 			// z-index: 99
 			// top: 2em
 		#nav-toggle span
@@ -66,9 +69,26 @@
 
 
 	.nav-links-mobile-container
-		z-index: 98
-		background-color: $dark-blue
+		display: none
+		// z-index: -1
+		background: transparent
 		color: $light-grey
+		transition: 300ms ease-in-out all
+		ul li
+			opacity: 0
+			transition: 700ms ease-in-out all
+			transition-delay: 200ms
+	
+	.nav-links-mobile-container.active
+		// transition: 700ms ease-in-out all
+		display: block
+		background: $dark-blue
+		// z-index: 98
+	
+
+	.nav-links-mobile-container.active ul li
+		// transition: 700ms ease-in-out all
+		opacity: 1
 
 
 
@@ -119,6 +139,7 @@
 @media screen and ($desktop)
 	.nav-lg
 		.nav-inner
+			left: 1em
 			ul
 				li
 					padding: 1.2em
