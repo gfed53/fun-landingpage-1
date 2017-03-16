@@ -44,7 +44,19 @@ $(function(){
 		//Hamburger Nav Icon Animation
 		$('#nav-toggle').on('click', ()=> {
 			$('#nav-toggle').toggleClass('active');
-			$('.nav-links-mobile-container').toggleClass('active');
+			// $('.nav-links-mobile-container').toggleClass('active');
+
+			if($('.nav-links-mobile-container').hasClass('enter-active')){
+				$('.nav-links-mobile-container').removeClass('enter-active');
+				// setTimeout(()=>{
+					// $('.nav-links-mobile-container').removeClass('enter');
+				// }, 50);
+			} else {
+				$('.nav-links-mobile-container').addClass('enter');
+				setTimeout(()=>{
+					$('.nav-links-mobile-container').addClass('enter-active');
+				}, 50);
+			}
 
 			//Fade-in animation for nav contents
 			// $('.nav-links-mobile-container span').toggleClass('nav-item-hidden');

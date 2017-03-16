@@ -18,6 +18,9 @@
 .nav-lg
 	display: none
 
+.nav-dropdown, .nav-links-mobile-container
+	// z-index: 99
+
 .nav-dropdown
 	// position: relative
 	z-index: 99
@@ -69,26 +72,38 @@
 
 
 .nav-links-mobile-container
-	// display: none
-	z-index: -1
+	display: none
+	z-index: 98
 	position: fixed
-	top: 3em
+	top: 3.3em
 	width: 100%
-	background: $dark-blue
+	background: $darker-blue
 	// background: transparent
 	color: $light-grey
 	transition: 300ms ease-in-out all
 	ul li
-		opacity: 0
+		// opacity: 0
 		transition: 700ms ease-in-out all
 		transition-delay: 200ms
 
-.nav-links-mobile-container.active
-	// transition: 700ms ease-in-out all
-	// display: block
-	background: $dark-blue
-	z-index: 98
+.nav-links-mobile-container.enter
+	display: block
+	opacity: 0
+	transition: 300ms ease-in-out all
 
+.nav-links-mobile-container.enter.enter-active
+	// transition: 700ms ease-in-out all
+	opacity: 1
+	// background: $dark-blue
+	// z-index: 98
+
+.nav-links-mobile-container.leave
+	display: block
+	opacity: 1
+	transition: 300ms ease-in-out all
+
+.nav-links-mobile-container.leave.leave-active
+	opacity: 0
 
 .nav-links-mobile-container.active ul li
 	// transition: 700ms ease-in-out all
@@ -137,8 +152,9 @@
 					a:hover:before
 						visibility: visible
 						transform: scaleX(1)
-	.nav-dropdown
+	.nav-dropdown, .nav-links-mobile-container
 		display: none
+
 
 @media screen and ($desktop)
 	.nav-lg
