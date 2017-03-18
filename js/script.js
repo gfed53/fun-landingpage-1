@@ -48,14 +48,20 @@ $(function(){
 
 			if($('.nav-links-mobile-container').hasClass('enter-active')){
 				$('.nav-links-mobile-container').removeClass('enter-active');
-				// setTimeout(()=>{
-					// $('.nav-links-mobile-container').removeClass('enter');
-				// }, 50);
+				setTimeout(()=>{
+					$('.nav-links-mobile-container').addClass('leave');
+				}, 50);
+				setTimeout(()=>{
+					$('.nav-links-mobile-container').removeClass('enter').addClass('leave-active');
+				}, 250);
 			} else {
-				$('.nav-links-mobile-container').addClass('enter');
+				$('.nav-links-mobile-container').removeClass('leave');
+				setTimeout(()=>{
+					$('.nav-links-mobile-container').removeClass('leave-active').addClass('enter');
+				}, 50);
 				setTimeout(()=>{
 					$('.nav-links-mobile-container').addClass('enter-active');
-				}, 50);
+				}, 100);
 			}
 
 			//Fade-in animation for nav contents
