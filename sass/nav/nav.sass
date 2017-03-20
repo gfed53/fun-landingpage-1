@@ -141,7 +141,9 @@
 			ul
 				li
 					list-style-type: none
+					cursor: pointer
 					padding: 0.9em
+					transition: .25s linear all
 					a
 						// text-decoration: none
 						color: $light-grey
@@ -158,11 +160,16 @@
 						border-radius: 5px
 						transform: scaleX(0)
 						transition: .25s linear
-					a:hover
-						color: white
-					a:hover:before
-						visibility: visible
-						transform: scaleX(1)
+					// a:hover
+						// color: white
+					// a:hover:before
+						// visibility: visible
+						// transform: scaleX(1)
+				li:hover a
+					color: white
+				li:hover a:before
+					visibility: visible
+					transform: scaleX(1)
 	.nav-mobile
 		display: none
 
