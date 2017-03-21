@@ -8,8 +8,8 @@
 		padding: 1.3em 1.5em
 		font-size: 1.2em
 		border: 2px solid $dark-blue
-		background-color: white
-		color: #424141
+		background-color: $dark-blue
+		color: white
 
 @media screen and ($tablet)
 	#cta
@@ -18,6 +18,9 @@
 		h2
 			font-size: 1.5em
 		#btn-cta
+			// border: 2px solid $dark-blue
+			// background-color: white
+			// color: #424141
 			// -webkit-animation: my-cta 1s
 			// webkit-animation-fill-mode: forwards
 			// -webkit-animation-direction: reverse
@@ -25,12 +28,11 @@
 			// animation-fill-mode: forwards
 			// animation-direction: reverse
 			
-			transition: 300ms linear all
+			transition: 100ms linear all
 		#btn-cta:hover
 			// -webkit-animation: my-cta 300ms
 			// -webkit-animation-fill-mode: forwards
 			// animation: my-cta 300ms
 			// animation-fill-mode: forwards
-			background-color: $dark-blue
-			color: white
+			transform: scaleX(1.1) scaleY(1.1);
 
