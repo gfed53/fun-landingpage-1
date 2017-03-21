@@ -124,23 +124,35 @@ $(function(){
 
 		//CTA Button Animation
 
-		// $('#btn-cta').on('mouseenter', ()=>{
-		// 	$('#btn-cta').velocity({
-		// 		fontSize: '1.4em'
-		// 	}, {
-		// 		duration: 200
-		// 	}
-		// 	);
-		// });
+		$('#btn-cta').on('mouseenter', ()=>{
+			$('#btn-cta').velocity({
+				scaleX: 1.1
+			}, {
+				duration: 75,
+				easing: 'spring'
+			}
+			).velocity({
+				scaleY: 1.1
+			}, {
+				duration: 75,
+				easing: 'spring'
+			});
+		});
 
-		// $('#btn-cta').on('mouseleave', ()=> {
-		// 	$('#btn-cta').velocity({
-		// 		fontSize: '1.2em'
-		// 	}, {
-		// 		duration: 200
-		// 	}
-		// 	);
-		// });
+		$('#btn-cta').on('mouseleave', ()=> {
+			$('#btn-cta').velocity({
+				scaleX: 1
+			}, {
+				duration: 75,
+				easing: 'spring'
+			}
+			).velocity({
+				scaleY: 1
+			}, {
+				duration: 75,
+				easing: 'spring'
+			});
+		});
 	}
 
 	init();
