@@ -4,22 +4,17 @@
 	border: 0 none
 	position: relative
 	outline: none
-	// z-index: 1
 
 
 *:before, *:after
 	box-sizing: inherit
 
-// body
-// 	background-color: #ECF0F1
-
 .grid
-	margin: 2em
+	margin: 0.5em
 	margin-top: 4em
 
 
 .hidden
-	// opacity: 0
 	display: none
 
 .visually-hidden
@@ -28,3 +23,7 @@
 .nav-item-hidden
 	opacity: 0
 	transition: 700ms ease-in-out all
+
+@media screen and ($mobile-fix1)
+	.grid
+		margin: 2em

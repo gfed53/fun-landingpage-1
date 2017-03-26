@@ -44,7 +44,6 @@ $(function(){
 		//Hamburger Nav Icon Animation
 		$('#nav-toggle').on('click', ()=> {
 			$('#nav-toggle').toggleClass('active');
-			// $('.nav-links-mobile-container').toggleClass('active');
 
 			if($('.nav-links-mobile-container').hasClass('enter-active')){
 				$('.nav-links-mobile-container').removeClass('enter-active');
@@ -111,11 +110,6 @@ $(function(){
 					duration: 1000
 				});
 			}
-			// $('.nav-links-mobile-container span').toggleClass('nav-item-hidden');
-
-			// $('.nav-links-mobile-container ul li').toggleClass('nav-item-hidden');
-
-			
 			
 		});
 
