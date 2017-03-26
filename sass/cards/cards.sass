@@ -8,10 +8,16 @@
 	display: -ms-flexbox   /* MID: IE 10 */
 	display: -webkit-flex
 	//Bug on iOS: cards not wrapping
-	flex-wrap: wrap
-	-webkit-flex-wrap: wrap
-	-moz-flex-wrap: wrap
-	-ms-flex-wrap: wrap
+	// flex-wrap: wrap
+	// -webkit-flex-wrap: wrap
+	// -moz-flex-wrap: wrap
+	// -ms-flex-wrap: wrap
+
+	flex-flow: row wrap
+	-webkit-flex-flow: row wrap
+	-moz-flex-flow: row wrap
+	-ms-flex-flow: row wrap
+
 	margin-bottom: 3em
 	.card-container
 		margin: 1em auto
