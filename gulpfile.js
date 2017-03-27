@@ -14,18 +14,19 @@ var paths = {
 
 gulp.task('sass', function(){
 	return gulp.src(paths.sass)
-	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer())
 	.pipe(gulp.dest(paths.css));
 });
 
-gulp.task('autoprefixer', function() {
-    gulp.src('/css/styles.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest(paths.css));
-});
+// gulp.task('autoprefixer', function() {
+//     gulp.src('/css/styles.css')
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest(paths.css));
+// });
 
 // Watch
 gulp.task('watch', function(){
