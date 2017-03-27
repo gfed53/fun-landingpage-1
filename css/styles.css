@@ -248,8 +248,8 @@ header #bg-container {
     margin: 1em auto;
     display: inline-block;
     -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3; }
+    -moz-flex: 3;
+    -ms-flex: 3; }
     #cards .card-container .card-inner figure {
       margin: 0 auto;
       width: 15em;
