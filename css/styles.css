@@ -333,7 +333,7 @@ footer {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-left: 2em; }
+    margin-left: 1em; }
     footer .footer-section-links li {
       list-style-type: none;
       margin-bottom: 0.5em; }
@@ -347,6 +347,10 @@ footer {
     -moz-flex: 1 100%;
     -ms-flex: 1 100%;
     flex: 1 100%; }
+
+@media screen and (min-width: 400px) {
+  footer .footer-section-links {
+    margin-left: 2em; } }
 
 @media screen and (min-width: 768px) {
   footer .footer-section-main {
