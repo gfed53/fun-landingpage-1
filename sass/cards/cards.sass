@@ -1,38 +1,19 @@
-//Refactor with mixin for vendor prefixes
-
 #cards
-	// display: -webkit-box   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-	// display: -moz-box      /* OLD: Firefox (buggy) */
-	// display: -moz-flex
-	// display: -ms-flexbox   /* MID: IE 10 */
-	// display: -webkit-flex
 	display: flex
-	//Bug on iOS: cards not wrapping
-	// flex-wrap: wrap
-	// -webkit-flex-wrap: wrap
-	// -moz-flex-wrap: wrap
-	// -ms-flex-wrap: wrap
-
-	// -webkit-flex-flow: row wrap
-	// -moz-flex-flow: row wrap
-	// -ms-flex-flow: row wrap
 	flex-flow: row wrap
 	margin-bottom: 3em
 	.card-container
 		margin: 1em auto
-		// width: 100%
 		display: inline-block
 		-webkit-flex: 3 1 auto
 		-moz-flex: 3
 		-ms-flex: 3
 		flex: 3 1 auto
 		.card-inner
-			// margin: 1em
 			figure
 				margin: 0 auto
 				width: 15em
 				height: 18em
-				// border: 1px solid grey
 				img
 					width: inherit
 			figcaption
@@ -52,14 +33,10 @@
 @media screen and ($tablet)
 	#cards
 		.card-container
-			// width: 33%
 			-webkit-box-flex: 1 1 22em
 			-webkit-flex: 1 1 22em
 			-moz-flex: 1
 			-ms-flex: 1
 			flex: 1 1 22em
-		// .card-inner
-		// 	figcaption
-		// 		margin: 1em
 			
 

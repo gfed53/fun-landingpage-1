@@ -2,7 +2,6 @@
 	position: fixed
 	top: 0
 	width: 100%
-	// background: $dark-blue
 	color: $light-grey
 .nav-brand
 	font-size: 1.3em
@@ -15,34 +14,22 @@
 			a
 				text-decoration: none
 				color: $light-grey
-				// transition: .25s linear all
 .nav-lg
 	display: none
 
-.nav-dropdown, .nav-links-mobile-container
-	// z-index: 99
-
 .navbar-container
-	// position: relative
 	height: 3.5em
 	background: $dark-blue
 	box-shadow: 1px 1px 2px #000
-	// z-index: 100
 	z-index: 99
 	.nav-brand
 		top: 0.75em
 	.nav-toggle-container
-		// height: 3.5em
-		// background: $dark-blue
 		z-index: 100
 		text-align: right
-		// box-shadow: 1px 1px 2px #000
 		
 		#nav-toggle
-			// top: 1.5em
 			right: 4em
-			// z-index: 99
-			// top: 2em
 		#nav-toggle span
 			position: absolute
 			left: 50%
@@ -85,7 +72,6 @@
 	top: -10.7em
 	width: 100%
 	background: $darker-blue
-	// background: transparent
 	color: $light-grey
 	transition: 300ms ease-in-out all
 	.nav-links-mobile
@@ -93,8 +79,6 @@
 	ul li
 		opacity: 0
 		text-align: center
-		// transition: 700ms ease-in-out all
-		// transition-delay: 200ms
 
 .nav-links-mobile-container.enter
 	display: block
@@ -102,11 +86,8 @@
 	transition: 300ms ease-in-out all
 
 .nav-links-mobile-container.enter.enter-active
-	// transition: 700ms ease-in-out all
 	opacity: 1
 	transform: translateY(14em)
-	// background: $dark-blue
-	// z-index: 98
 
 .nav-links-mobile-container.leave
 	display: block
@@ -117,7 +98,6 @@
 	display: none
 
 .nav-links-mobile-container.active ul li
-	// transition: 700ms ease-in-out all
 	opacity: 1
 
 @media screen and ($mobile-height-fix)
@@ -137,9 +117,6 @@
 		z-index: 999
 		.nav-inner
 			position: relative
-			// left: 1em
-			// .nav-brand
-			// 	font-size: 1.3em
 			ul, li 
 				display: inline-block
 			ul
@@ -149,7 +126,6 @@
 					padding: 0.9em
 					transition: .25s linear all
 					a
-						// text-decoration: none
 						color: $light-grey
 						transition: .25s linear all
 					a:before
@@ -164,11 +140,6 @@
 						border-radius: 5px
 						transform: scaleX(0)
 						transition: .25s linear
-					// a:hover
-						// color: white
-					// a:hover:before
-						// visibility: visible
-						// transform: scaleX(1)
 				li:hover a
 					color: white
 				li:hover a:before

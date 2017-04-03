@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
 
 $(function(){
-	console.log($('.nav-links-mobile-container ul li'));
 
 	function init(){
 		//Parallax Header BG

@@ -4,9 +4,8 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 var paths = {
-	sass: './sass/*.sass',
+	sass: './sass/styles.sass',
 	allSass: './sass/**/*.sass',
-	// preCSS: './sass/pre-css/pre-styles.css'
 	css: './css'
 };
 
@@ -18,15 +17,6 @@ gulp.task('sass', function(){
 	.pipe(autoprefixer())
 	.pipe(gulp.dest(paths.css));
 });
-
-// gulp.task('autoprefixer', function() {
-//     gulp.src('/css/styles.css')
-//         .pipe(autoprefixer({
-//             browsers: ['last 2 versions'],
-//             cascade: false
-//         }))
-//         .pipe(gulp.dest(paths.css));
-// });
 
 // Watch
 gulp.task('watch', function(){
