@@ -2,9 +2,14 @@
 
 A landing page for a fictitious company.
 
+## Live Demo
+
+Click [here](http://www.gregoryfederico.com/fun-landingpage-1/) to visit the page!
+
+
 ## Introduction
 
-I wanted to create a simple landing page since the majority (perhaps even all..) of my work has been web apps, particularly in AngularJS. This landing page would allow me to both show off and sharpen my design skills, and have another go at the 'Bootstrap-less' way of development.
+I wanted to create a simple landing page since the majority (perhaps even all..) of my work have been web apps, particularly in AngularJS. This landing page would allow me to both show off and sharpen my design skills, and have another go at the 'Bootstrap-less' way of development.
 
 ## The Process
 
@@ -16,7 +21,4 @@ For animations, I became more comfortable with Velocity.js as well as CSS3 anima
 
 For my styles in general, I used the actual Sass syntax (not SCSS) for the first time and now prefer the bracket-less, semicolon-less, indented way of doing things. With my workflow, I gained some experience with CSS autoprefixers.
 
-# Resources
-
-Live demo [here](http://www.gregoryfederico.com/fun-landingpage-1/)!
 
