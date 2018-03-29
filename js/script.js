@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 
+
 $(function(){
 
 	function init(){
